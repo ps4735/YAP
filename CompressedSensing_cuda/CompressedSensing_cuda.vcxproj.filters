@@ -24,10 +24,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cuFft2D.h">
+    <ClInclude Include="CompressedSensing_cuda.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ModulePhase_gpu.h">
+    <ClInclude Include="Recon_Runtime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReconBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,10 +38,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BasicRecon_GPU.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cuFft2D.cpp">
+    <ClCompile Include="CompressedSensing_cuda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
@@ -46,8 +46,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="pre_cuFft2D.cu" />
-    <CudaCompile Include="ModulePhase_gpu.cpp">
+    <None Include="cudaMatrixOp.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="cuFFT.cu" />
+    <CudaCompile Include="cuTV.cu" />
+    <CudaCompile Include="Recon_Runtime.cu">
       <Filter>Source Files</Filter>
     </CudaCompile>
   </ItemGroup>
