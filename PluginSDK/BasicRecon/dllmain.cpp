@@ -29,7 +29,6 @@
 #include "SubSampling.h"
 #include "ZeroFilling.h"
 
-
 #include "Interface\Implement\YapImplement.h"
 
 using namespace Yap;

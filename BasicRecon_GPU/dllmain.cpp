@@ -2,14 +2,12 @@
 #include "Interface/Implement/ContainerImpl.h"
 #include "Interface\Implement\YapImplement.h"
 #include "cuFft2D.h"
-#include "ModulePhase_gpu.h"
 
 
 using namespace Yap;
 
 BEGIN_DECL_PROCESSORS
 ADD_PROCESSOR(cuFft2D)
-ADD_PROCESSOR(ModulePhase_gpu)
 END_DECL_PROCESSORS
 
 BOOL APIENTRY DllMain(HMODULE hModule,
