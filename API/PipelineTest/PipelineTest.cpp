@@ -68,7 +68,9 @@ int main()
 	debugger.DebugPlugin(L"BasicRecon.dll");
 //	debugger.DebugPlugin(L"GrappaRecon.dll");
 //	debugger.DebugPlugin(L"CompressedSensing.dll");
-	debugger.DebugPlugin(L"BasicRecon_GPU.dll");
+//	debugger.DebugPlugin(L"BasicRecon_GPU.dll");
+//	debugger.DebugPlugin(L"CompressedSensing_GPU.dll");
+//	debugger.DebugPlugin(L"CompressedSensing_CUDA.dll");
 
 //	 ConstructorTest();
 

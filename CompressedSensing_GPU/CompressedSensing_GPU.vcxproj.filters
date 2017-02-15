@@ -24,10 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cuFft2D.h">
+    <ClInclude Include="CompressedSensing_gpu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ModulePhase_gpu.h">
+    <ClInclude Include="CompressedSensing_AF.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,19 +35,15 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BasicRecon_GPU.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cuFft2D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressedSensing_AF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="pre_cuFft2D.cu" />
-    <CudaCompile Include="ModulePhase_gpu.cpp">
+    <CudaCompile Include="CompressedSensing_gpu.cu">
       <Filter>Source Files</Filter>
     </CudaCompile>
   </ItemGroup>

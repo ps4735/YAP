@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B61E5F0A-4BFE-45B4-8910-3B8BA5938EF2}</ProjectGuid>
+    <ProjectGuid>{FD00D812-B9E7-4BAD-BC0F-73CBC2627F9B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>BasicRecon_GPU</RootNamespace>
+    <RootNamespace>CompressedSensing_GPU</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -156,27 +156,21 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cuFft2D.h" />
-    <ClInclude Include="ModulePhase_gpu.h" />
+    <ClInclude Include="CompressedSensing_AF.h" />
+    <ClInclude Include="CompressedSensing_gpu.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BasicRecon_GPU.cpp" />
-    <ClCompile Include="cuFft2D.cpp" />
+    <CudaCompile Include="CompressedSensing_gpu.cu" />
+    <ClCompile Include="CompressedSensing_AF.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <CudaCompile Include="ModulePhase_gpu.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CudaCompile Include="pre_cuFft2D.cu">
-      <FileType>Document</FileType>
-    </CudaCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
